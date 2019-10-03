@@ -1,0 +1,50 @@
+ a {
+     color: #FFD54F text-decoration: none
+ }
+
+ a:hover {
+     color: #E0F2F1;
+ }
+
+ body {
+     background-color: #B2DFDB;
+     font-family: Arial font-size: 14pt
+ }
+
+ header {
+     background-color: #FFD54F color #000000;
+     text-align;
+     center
+ }
+
+ h1 {
+     background-color: #004d40;
+     line-height: 75px
+         text-align: center;
+ }
+
+ article {
+     background-color: #00796B;
+     padding: 5px
+ }
+
+ span {
+     color: #cc0000 font-weight: bold
+ }
+
+ a:unvisited {
+     color: gold;
+ }
+
+a:visited {
+     color: gold;
+ }
+
+
+ strong {
+     color: #cc0000
+ }
+
+ nav {
+     color: gold
+ }
