@@ -21,6 +21,15 @@
             z-index: -10%;
         }
 
+.main-container2 {
+            background-color: 0;
+            background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: -10%;
+        }
+
         li {
             position: absolute;
             display: block;
@@ -40,13 +49,22 @@
         .content-card {
             width: 300px;
             height: 300px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: inherit;
-            text-align: left;
+            margin-left: 55px;
+            margin-right: 55px;
+            padding: 55px;
+            align-self: left;
             background-color: dimgrey;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            
+            -ms-transition: all 1s ease-in;
+            -webkit-transition: all 1s ease-in;
+            -moz-transition: all 1s ease-in;
+            -o-transition: all 1s ease-in;
+        }
 
-            -ms-transform: scale(10%);
+        .content-card:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+             -ms-transform: scale(10%);
             -moz-transform: scale(10%);
             -webkit-transform: scale(10%);
             -o-transform: scale(10%);
@@ -55,12 +73,6 @@
             -webkit-transition: all 1s ease-in;
             -moz-transition: all 1s ease-in;
             -o-transition: all 1s ease-in;
-
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-
-        .content-card:hover {
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
 
 .content-text:link {
