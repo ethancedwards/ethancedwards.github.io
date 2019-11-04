@@ -114,3 +114,11 @@ nav td {
     height: 100px;
     width: 200px;
 }
+
+.nav {
+    width: 100%;
+}
+
+a {
+    text-decoration-line: none;
+}
