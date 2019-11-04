@@ -122,3 +122,7 @@ nav td {
 a {
     text-decoration-line: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
