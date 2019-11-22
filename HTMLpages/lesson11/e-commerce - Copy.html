@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #slideshow {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #slideshowimage {
+            width: 97%;
+            max-width: 1348px;
+        }
+
+        table {
+            max-width: 1400px;
+            margin: auto;
+            width: 100%;
+            background-color: #Ffffff;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+        }
+
+        #logo {
+            width: 135px;
+            text-decoration-line: none;
+        }
+
+        #newin {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 8px;
+            text-decoration-line: none;
+
+        }
+
+        #itemscontainer {
+            width: 100%;
+            max-width: 1348px;
+            text-decoration-line: none;
+        }
+
+        .content-card {
+            max-width: 338px;
+            max-height: 355.78px;
+            margin: 0px 0px 20px;
+            padding: 0px 15px;
+            text-decoration-color: white;
+            background-color: white;
+            float: left;
+            text-decoration-line: none;
+        }
+        
+        .blogcard {
+            width: 100%;
+            max-width: 426.66px;
+            max-height: 284.16px;
+            margin: 0px 0px 20px;
+            padding: 0px 15px 15px 15px;
+            text-decoration-color: white;
+            background-color: white;
+            float: left;
+            text-decoration-line: none;
+            margin-top: 15px;
+        }
+
+        .content-title {
+            color: white;
+            text-decoration-line: none;
+            font-family: 'Anton', sans-serif;
+            font-size: 50px;
+            position: relative;
+        }
+        
+        li {
+            font-family: 'Anton', sans-serif;
+            font-size: 1px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1348px;
+            margin: auto;
+            justify-content: center;
+        }
+
+        #cardimage {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .content-text {
+            text-decoration-color: none;
+            font-family: 'Anton', sans-serif;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            font-size: 10px;
+        }
+
+        #container {
+            background-color: white;
+            width: 100%;
+            max-width: 1348px;
+            height: 71px;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Anton', sans-serif;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin: auto;
+        }
+
+        #toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: ;
+        }
+
+        #downarrow {
+            width: 10px;
+        }
+        
+        #blognews-container {
+            display: flex;
+            width: 1348;
+            margin: auto;
+            justify-content: center;
+            margin: 0px 0px 20px;
+            padding: 0px 15px;
+        }
+        
+        a {
+            text-decoration-line: none;
+        }
+        
+        #footer {
+            display: flex;
+            font-family: 'Anton', sans-serif;
+            font-size: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #returns {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 20px;
+        }
+        
+        #media {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 20px;
+            align-items: center;
+        }
+        
+        #email {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 20px;
+            align-items: flex-end;
+        }
+        
+        #news {
+            margin-bottom: 9.163px; 
+        }
+}
+        #society {
+            margin-bottom: 9.163px;
+        }
+        
+        #medialinks {
+            margin-top: 5.4978px;
+        }
+}
+        #drpplj {
+            margin-bottom: 10px;
+        }
+        
+        #navitem {
+            margin-right: 4%;
+        }
+        
+        #navitem2 {
+            margin-right: 4%;
+        }
+        
+        #navitem3 {
+            margin-right: 4%;
+        }
+        
+        #navitem4 {
+            
+        }
+        
+        #navitem5 {
+            margin-left: 30px;
+        }
+        
+        #navitem6 {
+            margin-left: 7px;
+        }
+        
+        #navitem:hover {
+            color: darkgrey;
+        }
+        
+        #navitem2:hover {
+            color: darkgrey;
+        }
+        
+        #navitem3:hover {
+            color: darkgrey;
+        }
+        
+        #navitem4:hover {
+            color: darkgrey;
+        }
+        
+        #navitem5:hover {
+            color: darkgrey;
+        }
+        
+        #navitem6:hover {
+            color: darkgrey;
+        }
+        
+        #cardimage:hover {
+            z z-index: ;
+            background-color: grey;
+            opacity: 50%;
+            
+            -ms-transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+    <div id="container">
+        <div id="container">
+    <div id="navitem"><a>SHOP</a></div>  
+    <div id="navitem2"><a>BLOG</a></div>
+    <div id="navitem3"><a>ABOUT</a></div>
+    <div id="navitem4"><a><img style="width: 135px; height: 30px;" src="../../images/logo.png"></a></div>
+    <div id="navitem5"><a>STOCKISTS</a></div>
+    <div id="navitem6"><a>CONTACT</a></div>
+    <div id="toolbar">
+        
+        <div>USD</div>
+        
+        <div>
+            <img style="width: 8px; margin-left: 5px; margin-right: 10px;" src="../../images/down-arrow.svg">
+        </div>
+        
+        <div>
+            <img src="../../images/search.PNG">
+        </div>
+        
+        <div><img src="../../images/lock.PNG"</div>
+        
+        </div>
+    </div>
+            </div>
+    </nav>
+    
+    <div id="slideshow">
+                    <img id="slideshowimage" src="../../images/slideshow_1.jpg">
+            </div>
+
+            <div id="newin">
+                <strong>NEW IN</strong>
+            </div>
+
+            <div class="content-wrapper">
+
+
+                <div class="content-card">
+                    
+                        <a><img id="cardimage" src="../../images/shorts.PNG"></a>
+                        <div class="content-text">
+                            JAMBOREE FIXED WAIST BOARDSHORT - PHANTOM
+                        </div>
+                    
+                </div>
+
+                <div class="content-card">
+                    
+                        <a><img id="cardimage" src="../../images/shirt.PNG"></a>
+                        <div class="content-text">
+                            MARLEY TEE - PHANTOM
+                        </div>
+                    
+                </div>
+
+                <div class="content-card">
+                    
+                        <a><img id="cardimage" src="../../images/ownrace.jpg"></a>
+                        <div class="content-text">
+                            OWN RACE CAP - BLACK
+                        </div>
+                   
+                </div>
+
+                <div class="content-card">
+                    
+                        <a><img id="cardimage" src="../../images/runjahblack.jpg"></a>
+                        <div class="content-text">
+                            RUNJAH TEE - FLAT BLACK
+                        </div>
+                    
+                </div>
+                
+                
+
+            </div>
+    
+    <div class="content-wrapper">
+
+
+                <div class="content-card">
+                    
+                    <a><img id="cardimage" src="../../images/ownracetote.jpg"></a>
+                        <div class="content-text">
+                            OWN RACE TOTE - BLACK
+                        </div>
+                    </a>
+                </div>
+
+                <div class="content-card">
+                    
+                        <a><img id="cardimage" src="../../images/jamnesia.jpg">
+                            <div class="content-text"></a>
+                            JAMNESIA BROADSHORT - PHANTOM
+                        </div>
+                    </a>
+                </div>
+
+                <div class="content-card">
+                    
+                    <a><img id="cardimage" src="../../images/ownracessshirt.jpg"></a>
+                        <div class="content-text">
+                            OWN RACE SS SHIRT - WHITE
+                        </div>
+                    </a>
+                </div>
+
+                <div class="content-card">
+                    
+                    <a><img id="cardimage" src="../../images/revolttee.jpg"></a>
+                        <div class="content-text">
+                            REVOLT TEE - BLACK
+                        </div>
+                    </a>
+                </div>
+                
+                
+
+            </div>
+    
+    <div id="newin">
+                BLOG NEWS
+            </div>
+    
+    
+    <div class="content-wrapper">
+
+
+                <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews1.PNG">
+                        <div class="content-text">
+                            JAMNESIA - IN MONTEGO BAY
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews2.PNG">
+                        <div class="content-text">
+                            CRITICAL CHANGE - A RECYCLED YARN
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews3.PNG">
+                        <div class="content-text">
+                            A BIG SUN COLLABORATION
+                        </div>
+                    </a>
+                </div>
+
+    </div>
+    <div class="content-wrapper">
+        
+        
+                <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews4.PNG">
+                        <div class="content-text">
+                            BE KIND, REWIND - A HOME VIDEO
+                        </div>
+                    </a>
+                </div>
+        
+        <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews5.PNG">
+                        <div class="content-text">
+                            [VERSE 1] BABE RAINBOW BY JORDAN MALANE
+                        </div>
+                    </a>
+                </div>
+        
+        <div class="blogcard">
+                    <a href="">
+                        <img id="cardimage" src="../../images/blognews6.PNG">
+                        <div class="content-text">
+                            LIMITED & EXCLUSIVE 'ALLAH LAS X CRITICAL
+                        </div>
+                    </a>
+                </div>
+                
+                
+
+            </div>
+<div id="footer">
+        
+        <div id="returns">
+            <div id="drpplj">
+                DELIVERY & RETURNS :: PRIVACY :: POLICY :: LOGIN :: JOIN
+            </div>
+        
+            <div>
+            AUSTRALIA/INTL STORE (CHANGE REGION)
+            </div>   
+        </div>
+    
+    
+    
+        <div id="media">
+            <div id="society">
+                THE CRITICAL SLIDE SOCIETY :: SURFWEAR & ACCESSORIES
+            </div>    
+            <div id="medialinks">
+                <img src="../../images/medialinks.PNG"
+            </div>
+        </div>
+    
+    </div>
+            
+        <div id="email">
+             <div id="news">
+                SUBSCRIBE FOR TCSS NEWS
+            </div>
+            <div>
+                <img src="../../images/emailbar.PNG">
+            </div>
+        </div>
+            
+
+    
+    
+    
+</body></html>

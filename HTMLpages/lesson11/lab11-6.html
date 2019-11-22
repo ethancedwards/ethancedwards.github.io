@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function filterResults() {
+            let inputElement = document.getElementById("searchInput");
+            let searchValue = inputElement.value.toUpperCase();
+
+            let pokemon = document.getElementsByClassName("pokemon-card");
+
+
+            for (i = 0; i < pokemon.length; i++) {
+                let pokeText = pokemon[i].textContent;
+
+                if (pokeText.toUpperCase().indexOf(searchValue) > -1) {
+                    pokemon[i].style.display = "";
+                } else {
+                    pokemon[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, red, orange);
+        }
+
+        #grass {
+            background-color: #DEFDE0;
+        }
+
+        #fire {
+            background-color: #FDDFDF;
+        }
+
+        #electric {
+            background-color: #FCF7DE;
+        }
+
+        #water {
+            background-color: #DEF3FD;
+        }
+
+        #ground {
+            background-color: #F4E7DA;
+        }
+
+        #rock {
+            background-color: #D5D5D4;
+        }
+
+        #poison {
+            background-color: #B19CD9;
+        }
+
+        #bug {
+            background-color: #F8D5A3;
+        }
+
+        #dragon {
+            background-color: #97B3E6;
+        }
+
+        #psychic {
+            background-color: #EAEDA1;
+        }
+
+        #flying {
+            background-color: #F5F5F5;
+        }
+
+        #fighting {
+            background-color: #E6E0D4;
+        }
+
+        #normal {
+            background-color: #F5F5F5;
+        }
+
+        #ice {
+            background-color: #66CCFF;
+        }
+
+        .pokemon-card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            border-radius: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        img {
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        .img-container {
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            background-color: rgba(255, 255, 255, 0.6)
+        }
+
+        #numbergrass {
+            background-color: #c9e2cb;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberfire {
+            background-color: #dabdbd;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberelectric {
+            background-color: #c9c4ac;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberwater {
+            background-color: #b6cbd4;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberground {
+            background-color: #d8ccbf;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberrock {
+            background-color: #b9b9b9;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberpoison {
+            background-color: #9682bd;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberbug {
+            background-color: #d5b483;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberdragon {
+            background-color: #7794c5;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberpsychic {
+            background-color: #b0b46b;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberflying {
+            background-color: #d8d8d8;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberfighting {
+            background-color: #c2bcb1;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numbernormal {
+            background-color: #d5b483;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #numberice {
+            background-color: #d5b483;
+            padding: 5px 10px 5px 10px;
+            font-size: 10px;
+            display: flex;
+            width: 20px;
+            font-size: 10px;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+
+        #name {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        #type {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        #all-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #title-search {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        body>div {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px 5px 10px 5px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-family: 'roboto', sans-serif;
+            font-size: 15px;
+        }
+
+        #pokemonsearch {
+            color: white;
+            font-family: 'roboto', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="title-search">
+        <h1 id="pokemonsearch">
+            Pokemon Search
+        </h1>
+
+        <div>
+            <input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search for pokemon name or type.">
+        </div>
+    </div>
+    <section id="all-cards">
+        <div class="pokemon-card" id="grass">
+            <div class="img-container">
+                <img src="../../images/images/1-bulbasaur-grass.png">
+            </div>
+            <div id="numbergrass">
+                #001
+            </div>
+            <div id="name">
+                Bulbasaur
+            </div>
+            <div id="type">
+                Type: grass
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="fire">
+            <div class="img-container">
+                <img src="../../images/images/4-charmander-fire.png">
+            </div>
+            <div id="numberfire">
+                #004
+            </div>
+            <div id="name">
+                Charmander
+            </div>
+            <div id="type">
+                Type: fire
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="electric">
+            <div class="img-container">
+                <img src="../../images/images/25-pikachu-electric.png">
+            </div>
+            <div id="numberelectric">
+                #025
+            </div>
+            <div id="name">
+                Pikachu
+            </div>
+            <div id="type">
+                Type: electric
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="water">
+            <div class="img-container">
+                <img src="../../images/images/7-squirtle-water.png">
+            </div>
+            <div id="numberwater">
+                #007
+            </div>
+            <div id="name">
+                Squirtle
+            </div>
+            <div id="type">
+                Type: water
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="ground">
+            <div class="img-container">
+                <img src="../../images/images/50-diglet-ground.png">
+            </div>
+            <div id="numberground">
+                #050
+            </div>
+            <div id="name">
+                Diglet
+            </div>
+            <div id="type">
+                Type: ground
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="rock">
+            <div class="img-container">
+                <img src="../../images/images/95-onyx-rock.png">
+            </div>
+            <div id="numberrock">
+                #095
+            </div>
+            <div id="name">
+                Onix
+            </div>
+            <div id="type">
+                Type: rock
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="poison">
+            <div class="img-container">
+                <img src="../../images/images/88-grimer-poison.png">
+            </div>
+            <div id="numberpoison">
+                #088
+            </div>
+            <div id="name">
+                Grimer
+            </div>
+            <div id="type">
+                Type: poison
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="bug">
+            <div class="img-container">
+                <img src="../../images/images/123-scyther-bug.png">
+            </div>
+            <div id="numberbug">
+                #123
+            </div>
+            <div id="name">
+                Scyther
+            </div>
+            <div id="type">
+                Type: bug
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="dragon">
+            <div class="img-container">
+                <img src="../../images/images/149-dragonite-dragon.png">
+            </div>
+            <div id="numberdragon">
+                #149
+            </div>
+            <div id="name">
+                Dragonite
+            </div>
+            <div id="type">
+                Type: dragon
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="psychic">
+            <div class="img-container">
+                <img src="../../images/images/54-psyduck-water.png">
+            </div>
+            <div id="numberpsychic">
+                #054
+            </div>
+            <div id="name">
+                Psyduck
+            </div>
+            <div id="type">
+                Type: psychic
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="flying">
+            <div class="img-container">
+                <img src="../../images/images/84-doduo-flying.png">
+            </div>
+            <div id="numberflying">
+                #084
+            </div>
+            <div id="name">
+                Doduo
+            </div>
+            <div id="type">
+                Type: flying
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="fighting">
+            <div class="img-container">
+                <img src="../../images/images/56-mankey-fighting.png">
+            </div>
+            <div id="numberfighting">
+                #056
+            </div>
+            <div id="name">
+                Mankey
+            </div>
+            <div id="type">
+                Type: fighting
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="normal">
+            <div class="img-container">
+                <img src="../../images/images/108-lickitung-normal.png">
+            </div>
+            <div id="numberflying">
+                #108
+            </div>
+            <div id="name">
+                Lickitung
+            </div>
+            <div id="type">
+                Type: normal
+            </div>
+        </div>
+
+        <div class="pokemon-card" id="ice">
+            <div class="img-container">
+                <img src="../../images/images/144-articuno-ice.png">
+            </div>
+            <div id="numberdragon">
+                #144
+            </div>
+            <div id="name">
+                Articuno
+            </div>
+            <div id="type">
+                Type: ice
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

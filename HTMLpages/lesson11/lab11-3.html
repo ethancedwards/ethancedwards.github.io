@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .section-title {
+            margin-top: 50px;
+            font-size; 30px;
+        }
+
+        .flex-item {
+            background-color: #AED1E6;
+            height: 20vh;
+            width: 13vw;
+            min-width: 40px;
+            margin: 5px;
+        }
+        
+        body {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            font-size; 30px;
+        }
+        
+        section {
+            height: auto;
+            min-height: 40vw;
+            background-color: grey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        header {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+        
+        #section1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        #section2 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        #section3 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #section4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #section5 {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #section6 {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        #section7 {
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        #section8 {
+            display: flex;
+            align-items: center;
+        }
+        
+        #section9 {
+            display: flex;
+            align-content: flex-start;
+        }
+        
+        #section10 {
+            display: flex;
+            align-content: flex-end;
+        }
+        
+        #section11 {
+            display: flex;
+            align-content: center;
+        }
+        
+        #section12 {
+            display: flex;
+            align-content: space-between;
+        }
+        
+        #section13 {
+            display: flex;
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Flex Box: justify-content vs. align-content;
+    </header>
+    <div>
+        <header id="justify-content">
+            Justify Content: Aligns and spaces items along the flex axis. (x-axis with display: flex)
+        </header>
+        <header id="justify-content">Justify Content: flex start</header>
+        <section id="section1">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Justify Content: flex end</header>
+        <section id="section2">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Justify Content: center</header>
+        <section id="section3">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Justify Content: space-around</header>
+        <section id="section4">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Justify Content: space-between</header>
+        <section id="section5">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+    </div>
+    
+    <div>
+    <header id="justify-content">
+        Justify Content: Aligns and spaces items along the flex axis (x-axis with display: flex)    
+    </header>
+        <header id="justify-content">Align items: flex start</header>
+        <section id="section6">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align items: flex end</header>
+        <section id="section6">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align items: center</header>
+        <section id="section6">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+    </div>
+    
+    <div>
+    <header id="justify-content">
+        Justify Content: Aligns and spaces items along the flex axis (x-axis with display: flex)    
+    </header>
+        <header id="justify-content">Align content: flex start</header>
+        <section id="section9">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align content: flex end</header>
+        <section id="section10">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align content: center</header>
+        <section id="section11">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align content: space between</header>
+        <section id="section12">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+        
+        <header id="justify-content">Align content: space around</header>
+        <section id="section13">
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+            <div class="flex-item"></div>
+        </section>
+    </div>
+</body>
+
+</html>
