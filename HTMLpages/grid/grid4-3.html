@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #525252;
+        }
+        .board{
+            margin: auto;
+            width: 900px;
+            height: 900px;
+            background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 68%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+            
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(8, 1fr);
+        }
+        .dark{
+            background: black;
+        }
+        .square{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .piece{
+            max-height: 120px;
+            margin-top: -5px;
+            margin-bottom: -10px;
+        }
+        .l-rook{
+            background-image: url("l-rook.svg");
+        }
+        .l-knight{
+            background-image: url("l-knight.svg");
+        }
+        .l-bishop{
+            background-image: url("l-bishop.svg");
+        }
+        .l-rook{
+            background-image: url("l-rook.svg");
+        }
+        .l-queen{
+            background-image: url("l-queen.svg");
+        }
+    </style>
+</head>
+
+<body>
+    <section class="board">
+    <!-- row 1-->
+        <div class="square dark"><img class="piece" src="../../images/l-rook.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-knight.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-bishop.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-king.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-queen.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-bishop.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-knight.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-rook.svg"></div>
+
+        <div class="square"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/l-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/l-pawn.svg"></div>
+        
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        <div class="square"></div>
+        <div class="square dark"></div>
+        
+        <div class="square dark"><img class="piece" src="../../images/d-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-pawn.svg"></div></div>
+        <div class="square dark"><img class="piece" src="../../images/d-pawn.svg"></div></div>
+        <div class="square"><img class="piece" src="../../images/d-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-pawn.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-pawn.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-pawn.svg"></div>
+
+        <div class="square"><img class="piece" src="../../images/d-rook.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-knight.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-bishop.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-queen.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-king.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-bishop.svg"></div>
+        <div class="square"><img class="piece" src="../../images/d-knight.svg"></div>
+        <div class="square dark"><img class="piece" src="../../images/d-rook.svg"></div>
+    </section>
+</body>
+</html>
